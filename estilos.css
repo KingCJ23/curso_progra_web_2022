@@ -1,0 +1,77 @@
+/*referencia por palabra clave del elemento*/
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Referencia por el atributo ID*/
+#textoporid{
+  font-size: 14px;
+  color: red;  
+}
+
+/*Referencia por el atributo class*/
+.labelAzul{
+    font-size: 14px;
+    color: blue;
+}
+.labelVerde{
+    font-size: 14px;
+    color: green;
+}
+/*referencia por cualquier componente*/
+p[name="tercerp"]{
+    font-size: 10px;
+}
+p[name="cuartop"]{
+    font-size: 10px;
+}
+p[name="quintop"]{
+    font-size: 15px;
+}
+
+
+p[name]{
+    color: blueviolet;
+}
+
+/*referencia por combinacions
+*expresiones regulares
+*/
+p[name^="par"]{/*asigana valor a todos losque tengan el atributo name y que comiencen con el nombre*/
+    color: yellow;
+}
+p[name$="aguas"]{/*nos sirve para asignar a todos los componentes p con el atributo name que termine con ese txt*/
+    color: gray;
+}
+p[name*="parr"]{/*coloca a todos que tengan el atributo name y que contengan el texto*/
+    color: orangered;
+}
+
+/*Pseudoclases*/
+p:nth-child(1){
+    background: blue;
+}
+.mitexto:nth-child(2){
+    background: orange;
+}
+
+.mitexto:nth-child(3){
+    background: yellow;
+}
+.mitexto:nth-child(4){
+    background: green;
+}
+.mitexto:nth-child(5){
+    background: red;
+}
+
+*{
+    margin: 0px;
+}
+
+
+/*nuevos selectores*/
+div> p.mitexto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

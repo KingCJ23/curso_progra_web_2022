@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="iso-8859-1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="Ejemplo" content="Documento de ejemplo">
         <meta charset="Keywords" content="HTML5, CSS3, JavaScript">
         <meta charset="Hola mundo" content="Hola de nuevo">
         <title>Primera pagina web</title>
-        <link rel="styleshett" href="css/misestilo.css">
+        <link rel="stylesheet" href="estilos/template.css">
+        <link rel="stylesheet" href="estilos/style.css">
     </head>
 
     <body>
+        <div id="divGeneral">
 
-        <header>
-            <h1>
+        <header id="cabecera"">
+            <h1 id="tituloprincipal">
                 Este es el header de la pagina web
             </h1>
+            <h2>Subitutlo</h2>
         </header>
         
-        <nav>
+        <nav id="menu">
             <ul>
-                <li>Principal</li>
-                <li>Fotos</li>
-                <li>Videos</li>
-                <li>Documentos</li>
-                <li>Contactos</li>
+                <li class="opcion">Principal</li>
+                <li class="opcion"><a href="fotos.html">Fotos</a></li>
+                <li class="opcion">Videos</li>
+                <li class="opcion">Documentos</li>
+                <li class="opcion">Contactos</li>
             </ul>
         </nav>
 
-        <section>
-            <article>
+        <section id="seccionprincipal">
+            <article class="articulo">
                 <header>
                     <hgroup>
-                        <h1> Titulo del articulo uno</h1>
+                        <h1 class="tituloHeaderArticulo"> Titulo del articulo uno</h1>
                         <h2> Subtitulo del articulo uno</h2>
                     </hgroup>
                     <time datetime="2022-08-13" pubdate>Publicado el 13-08-2022</time>
@@ -42,9 +47,14 @@
                     <p>Comentarios (0)</p>
                 </footer>
             </article>
-            <article>
+            <article class="articulo">
                 <header>
-                    <h1> Titulo del articulo 2</h1>
+                    <hgroup>
+                        <h1 class="tituloHeaderArticulo"> Titulo del articulo dos</h1>
+                        <h2> Subtitulo del articulo dos</h2>
+                    </hgroup>
+                    <time datetime="2022-08-13" pubdate>Publicado el 13-08-2022</time>
+                
                 </header>
                 Este es un contenido del articulo 2
 
@@ -59,9 +69,14 @@
                     <p>Comentarios (0)</p>
                 </footer>
             </article>
-            <article>
+            <article class="articulo">
                 <header>
-                    <h1> Titulo del articulo 3</h1>
+                    <hgroup>
+                        <h1 class="tituloHeaderArticulo"> Titulo del articulo 3</h1>
+                        <h2> Subtitulo del articulo tres</h2>
+                    </hgroup>
+                    <time datetime="2022-08-13" pubdate>Publicado el 13-08-2022</time>
+                
                 </header>
                 Este es un contenido del articulo 3
                 <span>Esta es la <mark> etiqueta mark y es <strong>muy</strong>  <em>importante</em></mark></span>
@@ -72,14 +87,14 @@
             </article>
         </section>
 
-        <aside>
+        <aside id="sidebar">
             <blockquote>Mensaje numero uno</blockquote>
             <blockquote>Mensaje numero dos</blockquote>
             <blockquote>Mensaje numero tres</blockquote>
             <blockquote>Mensaje numero cuatro</blockquote>
         </aside>
 
-        <footer>
+        <footer id="footer">
             <small>
             Todos los derechos reservador para el curso de programacion web 1 UVG 2022
             </small>
@@ -88,4 +103,5 @@
             </address>
         </footer>
     </body>
+</div>
 </html>
