@@ -2,6 +2,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    text-decoration-color:black;
 }
 
 /*jerarquia de cabecerar*/
@@ -27,9 +29,11 @@ h6{
 /*Formato de elementos html 4*/
 header, section, footer, aside, nav, article, figure, figcaption,hgroup{
     display: block;
+
 }
 body{
     text-align: center;
+    background: linear-gradient(to left, #00ccff 0%, #ff99cc 100%);
 }
 /*diseño template*/
 #divGeneral{
@@ -42,33 +46,55 @@ body{
     background: rgb(3, 117, 3);
     padding: 20px;
     color: white;
+    text-align: right;
+}
+#logo{
+    width: 100px;
+    display: block;
+    float: left;
+    margin-top: -30px;
+
 }
 
 #menu{
     background: orangered;
     padding: 5px 15px;
+    text-align: center;
 
 }
 
 #menu li{
     display: inline-block;
     list-style: none;
-    padding: 5px;
+    padding: 0px 50px;
     font: bold 14px sans-serif;
+}
+#menu ul li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#menu ul li a:hover{
+    background-color: rgb(6, 31, 255); 
 }
 
 #seccionprincipal{
-float: left;
+float: right;
 width: 650px;
 margin: 20px;
 }
 
 #sidebar{
     float: left;
-    width: 220px;
+    width: 225px;
     margin: 20px 0px;
     padding: 20px;
-    background: rgb(89,206,229);
+    background: linear-gradient(to bottom left, #99ff99 0%, #0066ff 100%);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    border-color: black;
+    border: 1px solid black;
 }
 
 #footer{
@@ -76,4 +102,29 @@ margin: 20px;
     text-align: center;
     padding: 20px;
     border-top: 2px solid silver;
+    background: linear-gradient(to bottom, #0000ff 0%, #ff99cc 100%);
+    
+    
+}
+
+#p1{
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.redactado{
+    float: right;
+    
+}
+
+#pequeño{
+    text-decoration-line: none;
+}
+
+#despliegue{
+    border: 0px;
+    text-align: justify;
+    width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

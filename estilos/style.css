@@ -9,6 +9,7 @@
 article footer{
     text-align: right;
     color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 figcaption{
@@ -21,4 +22,19 @@ div{
     padding: 10px;
     border: 1px solid black;
     box-sizing: border-box;
+}
+
+#imagen{
+    width: 50%;
+}
+#imagen2{
+    width: 30%;
+}
+#imagenmusical{
+    width: 40%;
+}
+
+#p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
