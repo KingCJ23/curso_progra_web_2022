@@ -12,6 +12,10 @@
 
         <link rel="stylesheet" href="estilos/template.css">
         <link rel="stylesheet" href="estilos/style.css">
+        
+        <script
+     src="js/application.js" >
+        </script>
     </head>
 
     <body >
@@ -22,10 +26,10 @@
                 width="200px"/>
             </section>
             <hgroup>
-                <h1 id="tituloprincipal">
+                <h1 onmouseover="mostraralerta();" id="tituloprincipal">
                     Historia del Real Madrid C.F
                 </h1>
-                <h2>¡El mejor club del mundo!</h2>
+                <h2  id="SubtituloPri">¡El mejor club del mundo!</h2>
             </hgroup>
             
         </header>
@@ -57,6 +61,12 @@
                     fue Juan Padrós  (1902). La afición creció a tal velocidad que el Madrid planteó la solicitud de un torneo
                      en homenaje al rey Alfonso XIII. La iniciativa se convirtió en la Copa de España.
                 </p>
+                <p onclick="mostraralerta();">
+                    haz clic aqui
+                </p>
+                <p onclick="hacerclic();" id="parrafoConClick">
+                    Hola
+                </p>
 
                 <footer>
                     <time class="redactado" datetime="2022-08-26" pubdate>Publicado el 26-08-2022</time>
@@ -86,9 +96,9 @@
                     </figcaption>
                 </figure>
 
-                <footer>
+                <footer >
                     <time class="redactado" datetime="2022-08-26" pubdate>Publicado el 26-08-2022</time>
-                    <p>Carlos Juarez-</p>
+                    <p onmouseover='poscicion();' id="hola">Carlos Juarez-</p>
                 </footer>
             </article>
             <article class="articulo">
